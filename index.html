@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Focus Tomato &ndash; Simple focus timer</title>
+<meta name="description" content="Focus Tomato is a simple focus timer for Android. Focus sessions, short and long breaks, optional Do Not Disturb. No account, no ads, no tracking.">
+<link rel="icon" href="store/icon-512.png">
+<style>
+  :root { --bg:#fff8f3; --ink:#2b1d1a; --muted:#6e5a54; --tomato:#e5533d; --tomato-dark:#c43c2b; --card:#ffffff; --line:#f1e0d8; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#1c1412; --ink:#f6ebe7; --muted:#c3aea7; --card:#271d1a; --line:#3a2c28; } }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--ink); line-height:1.6; }
+  .wrap { max-width:1040px; margin:0 auto; padding:0 16px; }
+  header { display:flex; align-items:center; justify-content:space-between; padding:18px 0; }
+  .brand { display:flex; align-items:center; gap:10px; font-weight:700; font-size:1.1rem; color:inherit; text-decoration:none; }
+  .brand img { width:36px; height:36px; border-radius:9px; }
+  nav a { color:var(--muted); text-decoration:none; margin-left:18px; font-size:.95rem; }
+  nav a:hover { color:var(--tomato); }
+  .hero { display:grid; grid-template-columns:1.1fr .9fr; gap:40px; align-items:center; padding:48px 0 64px; }
+  h1 { font-size:clamp(2.2rem,5vw,3.4rem); line-height:1.1; margin:0 0 16px; letter-spacing:-.02em; }
+  h1 span { color:var(--tomato); }
+  .lead { font-size:1.15rem; color:var(--muted); margin:0 0 28px; max-width:34ch; }
+  .btn { display:inline-block; background:var(--tomato); color:#fff; padding:14px 24px; border-radius:999px; text-decoration:none; font-weight:600; }
+  .btn:hover { background:var(--tomato-dark); }
+  .note { display:block; margin-top:12px; font-size:.9rem; color:var(--muted); }
+  .phone { justify-self:center; width:min(300px,80vw); border-radius:32px; border:8px solid #2b1d1a; box-shadow:0 24px 60px rgba(196,60,43,.25); }
+  section { padding:56px 0; border-top:1px solid var(--line); }
+  h2 { font-size:1.8rem; margin:0 0 12px; letter-spacing:-.01em; }
+  .about p { max-width:62ch; color:var(--muted); font-size:1.05rem; }
+  .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:28px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:22px; }
+  .card .ic { font-size:1.6rem; }
+  .card h3 { margin:8px 0 6px; font-size:1.1rem; }
+  .card p { margin:0; color:var(--muted); font-size:.98rem; }
+  .shots { display:flex; gap:16px; overflow-x:auto; padding:8px 2px 16px; margin-top:24px; }
+  .shots img { width:200px; flex:0 0 auto; border-radius:20px; border:1px solid var(--line); }
+  footer { padding:32px 0 48px; color:var(--muted); font-size:.9rem; border-top:1px solid var(--line); display:flex; flex-wrap:wrap; gap:8px 20px; justify-content:space-between; }
+  footer a { color:var(--muted); }
+  @media (max-width:760px) {
+    .hero { grid-template-columns:1fr; padding:24px 0 48px; text-align:center; }
+    .lead { margin-left:auto; margin-right:auto; }
+    .grid { grid-template-columns:1fr; }
+    nav a { margin-left:12px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="./"><img src="store/icon-512.png" alt="">Focus Tomato</a>
+    <nav><a href="#about">About</a><a href="#benefits">Benefits</a><a href="docs/">Privacy</a></nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <h1>Focus for 25 minutes.<br><span>Then breathe.</span></h1>
+        <p class="lead">A clean, calm focus timer for Android. Work in short focused sessions, take real breaks, and let your phone stay quiet while you do.</p>
+        <a class="btn" href="#benefits">See how it helps</a>
+        <span class="note">Coming soon to Google Play. Free, no account needed.</span>
+      </div>
+      <img class="phone" src="store/screenshots/02-focusing.png" alt="Focus Tomato timer counting down a 25 minute focus session">
+    </div>
+
+    <section id="about" class="about">
+      <h2>About</h2>
+      <p>Focus Tomato uses a simple, well-known rhythm: focus for 25 minutes, rest for 5, and after four rounds take a longer 15-minute break. That's the whole idea. No feeds, no streaks, no sign-up screens. Open it, tap start, and get to work.</p>
+      <p>It was built to be small and honest: the app has no internet permission, so nothing you do in it ever leaves your phone.</p>
+    </section>
+
+    <section id="benefits">
+      <h2>Why use it</h2>
+      <div class="grid">
+        <div class="card"><div class="ic">&#127919;</div><h3>Deeper focus</h3><p>Short, fixed sessions make it easier to start and to keep going on hard tasks.</p></div>
+        <div class="card"><div class="ic">&#128277;</div><h3>Quiet phone</h3><p>Optional Do Not Disturb silences notifications while you focus, and turns them back on after.</p></div>
+        <div class="card"><div class="ic">&#9749;</div><h3>Real breaks</h3><p>Short and long breaks are built in, so you rest before you burn out.</p></div>
+        <div class="card"><div class="ic">&#9200;</div><h3>Never miss the end</h3><p>A notification tells you when time is up, even if the app is closed.</p></div>
+        <div class="card"><div class="ic">&#9881;&#65039;</div><h3>Your rhythm</h3><p>Change focus from 5 to 90 minutes and set breaks to suit how you work.</p></div>
+        <div class="card"><div class="ic">&#128274;</div><h3>Private by design</h3><p>No account, no ads, no tracking, no internet. Settings stay on your phone.</p></div>
+      </div>
+      <div class="shots">
+        <img src="store/screenshots/01-home.png" alt="Home screen with 25:00 focus timer">
+        <img src="store/screenshots/03-settings.png" alt="Settings for focus and break lengths and Do Not Disturb">
+        <img src="store/screenshots/04-break.png" alt="Short break timer in green">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>&copy; 2026 Focus Tomato</span>
+    <span><a href="docs/">Privacy policy</a> &middot; <a href="mailto:iyappansanthosh2004@gmail.com">Contact</a></span>
+  </footer>
+</div>
+</body>
+</html>
