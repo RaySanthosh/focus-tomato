@@ -1,4 +1,4 @@
-﻿# Focus Tomato â€“ Play Store upload guide
+# Focus Tomato â€“ Play Store upload guide
 
 Everything you need to paste into Play Console. You do the clicking; nothing here needs your password shared with anyone.
 
@@ -10,7 +10,7 @@ Everything you need to paste into Play Console. You do the clicking; nothing her
 | App icon 512Ã—512 | `store\icon-512.png` |
 | Feature graphic 1024Ã—500 | `store\feature-graphic-1024x500.png` |
 | Phone screenshots (2â€“8) | `store\screenshots\` |
-| Privacy policy page | `docs\index.html` -> https://raysanthosh.github.io/focus-tomato/ |
+| Privacy policy page | `docs\index.html` -> https://raysanthosh.github.io/focus-tomato/docs/ |
 | Upload key (BACK UP!) | `keys\` + `focus_tomato\android\key.properties` |
 
 App ID: `com.santosh.focustomato` (permanent) Â· Version: 1.0.0 (versionCode 1)
@@ -21,8 +21,8 @@ App ID: `com.santosh.focustomato` (permanent) Â· Version: 1.0.0 (versionCode 1
 1. Contact email is already filled in `docs\index.html`.
 2. GitHub â†’ New repository â†’ name `focus-tomato` â†’ Public â†’ Create.
 3. "uploading an existing file" â†’ drag `index.html` â†’ Commit.
-4. Repo â†’ Settings â†’ Pages â†’ Source: *Deploy from a branch*, Branch `main` / `/docs` â†’ Save.
-5. After ~1 min your URL is `https://raysanthosh.github.io/focus-tomato/`. Open it to check.
+4. Repo â†’ Settings â†’ Pages â†’ Source: *Deploy from a branch*, Branch `main` / `/ (root)` â†’ Save.
+5. After ~1 min your URL is `https://raysanthosh.github.io/focus-tomato/docs/`. Open it to check.
 
 ## 2. Create the app in Play Console
 Play Console â†’ **Create app**
